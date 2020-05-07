@@ -82,7 +82,7 @@ for gene in kmerDict:
 
     for genotype in numFoundKmers:
         if numFoundKmers[genotype]>0:
-            print("%d reads were found in genotype %s of gene %s" %(numFoundKmers[genotype],genotype,gene))
+            print("%d kmers were found in genotype %s of gene %s for a total of %d reads" %(numFoundKmers[genotype],genotype,numFoundReads[genotype]))
             outfile.write(gene+"\t"+genotype+"\t"+str(numFoundKmers[genotype])+"\t"+str(numFoundReads[genotype])+"\n")
         
 
